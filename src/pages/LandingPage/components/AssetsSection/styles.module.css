@@ -134,6 +134,7 @@
 
     .asset__Detail {
         max-height: unset;
+        height: max-content;
     }
 
     .learn__Btn {
