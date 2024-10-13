@@ -1,0 +1,128 @@
+.join__Wrap {
+    padding: 4rem 9.5rem 11rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.join__Content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.join__Content h3 {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+}
+
+.join__Content p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: #2d2d2d;
+}
+
+.connect__Illus__Wrap {
+    position: relative;
+}
+
+.person {
+    max-width: 100%;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.person.one {
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.person.two {
+    left: -15%;
+    top: 30%;
+}
+
+.person.three {
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.person.four {
+    right: -15%;
+    top: 15%;
+}
+
+.large {
+    display: block !important;
+}
+
+.mini {
+    display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+    .join__Wrap {
+        flex-direction: column-reverse;
+        padding: 2rem 1rem 5rem;
+        gap: 4rem;
+    }
+
+    .lines {
+        width: 80%;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .person {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .person.two {
+        left: -1%;
+    }
+
+    .person.four {
+        right: -1%;
+    }
+
+    .large {
+        display: none !important;
+    }
+
+    .mini {
+        display: block !important;
+    }
+
+    .join__Content {
+        gap: 1rem;
+    }
+
+    .join__Content h3 {
+        font-size: 2rem;
+        text-align: center;
+        line-height: 28.8px;
+    }
+
+    .join__Content p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .join__Btn {
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,139 @@
+.testimonials__Wrap {
+    position: relative;
+    z-index: 2;
+    padding: 8rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.testimonials__Wrap h3 {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    color: #40BBC3;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+.testimonial__Subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 23.44px;
+    letter-spacing: -0.05em;
+    color: #4A5050;
+    text-align: center;
+}
+
+.all__Testimonials {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    min-height: 18rem;
+    overflow: hidden;
+}
+
+.testimonial__Detail {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid #ECFEFE;
+    background: #FFFFFF;
+    box-shadow: 0px 12px 24px 0px #40BBC326;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+.testimonial__Detail.inline {
+    display: inline-flex;
+    position: relative;
+    top: unset;
+    transform: unset;
+}
+
+.testimonial__Detail.left {
+    left: -2.5%;
+}
+
+.testimonial__Detail.right {
+    right: -2%;
+}
+
+.testimonial__Detail p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.user__Pic {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    max-width: 100%;
+} 
+
+.user__Wrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 14.4px;
+    letter-spacing: -0.05em;
+    color: #2d2d2d;
+}
+
+.mini {
+    display: none !important;
+}
+
+@media screen and (max-width: 992px) {
+    .large {
+        display: none !important;
+    }
+
+    .mini {
+        display: block !important;
+    }
+
+    .testimonials__Wrap h3 {
+        font-size: 2rem;
+        line-height: 28.8px;
+    }
+
+    .testimonial__Subtitle {
+        font-size: 1rem;
+    }
+
+    .testimonial__Detail {
+        width: 90%;
+    }
+
+    .testimonial__Detail.inline.mini {
+        display: inline-flex !important;
+    }
+
+    .testimonial__Detail p {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .user__Wrap {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:  0 auto;
+    }
+
+    .all__Testimonials {
+        min-height: 24rem;
+    }
+}

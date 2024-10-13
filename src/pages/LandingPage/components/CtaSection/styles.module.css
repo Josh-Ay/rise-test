@@ -1,0 +1,102 @@
+.cta__Section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 15rem;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+}
+
+.phone__Img {
+    width: 24rem;
+    object-fit: cover;
+}
+
+.imgs__Wrap {
+    position: relative;
+    width: max-content;
+}
+
+.build__Wealth__Img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.build__Wealth__Img img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.build__Wealth__Info {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #fff;
+}
+
+.build__Wealth__Info h3 {
+    font-weight: 700;
+    line-height: 19.26px;
+}
+
+.build__Wealth__Info p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.79rem;
+    font-weight: 400;
+    line-height: 18.51px;
+}
+
+.action__Btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+    width: 95%;
+}
+
+
+.cta__Content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.content__Title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: -0.05em;
+    color: #2d2d2d;
+}
+
+.cta__Main {
+    font-size: 2.8125rem;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+}
+
+.cta__Desc {
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.purple__Highlight {
+    color: #8c5ff8;
+}
+
+@media screen and (max-width: 992px) {
+    .cta__Section {
+        display: none;
+    }
+}

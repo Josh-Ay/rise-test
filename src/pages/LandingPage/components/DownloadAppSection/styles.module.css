@@ -1,0 +1,96 @@
+.download__App__Section {
+    width: calc(100% - calc(9.5rem) * 2);
+    margin: 0 auto;
+    background-color: #ECFEFE;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    border-radius: 50px;
+    padding: 2.5rem 6.5rem 2.5rem 1.5rem;
+    height: 31rem;
+    overflow: hidden;
+}
+
+.download__Content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.app__Action__Wrap {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.title,
+.subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.title {
+    color: var(--primary-teal-color);
+}
+
+.content {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 38.4px;
+    letter-spacing: -0.05em;
+}
+
+.subtitle {
+    color: #242424;
+}
+
+.phone__Img {
+    width: 15rem;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+    .download__App__Section {
+        width: calc(100% - 1rem);
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+        padding: 2rem 0.5rem;
+    }
+
+    .title,
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .content {
+        font-size: 1.25rem;
+        line-height: 24px;
+        font-weight: 600;
+    }
+
+    .download__Content {
+        gap: 1rem;
+    }
+
+    .btn__Title {
+        white-space: nowrap;
+    }
+
+    .app__Action__Wrap {
+        gap: 1rem;
+    }
+
+    .action__Btn {
+        padding: 0.5rem !important;
+    }
+
+    .phone__Img {
+        margin: 0 auto;
+        display: block;
+    }
+}
